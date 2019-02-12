@@ -1,0 +1,78 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>neo_cli_rpcServer</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Consensus\**" />
+    <Compile Remove="Cryptography\**" />
+    <Compile Remove="DumpInfo\**" />
+    <Compile Remove="IO\**" />
+    <Compile Remove="Ledger\**" />
+    <Compile Remove="Network\P2P\**" />
+    <Compile Remove="Persistence\**" />
+    <Compile Remove="Plugins\**" />
+    <Compile Remove="SmartContract\**" />
+    <Compile Remove="VM\**" />
+    <Compile Remove="Wallets\**" />
+    <EmbeddedResource Remove="Consensus\**" />
+    <EmbeddedResource Remove="Cryptography\**" />
+    <EmbeddedResource Remove="DumpInfo\**" />
+    <EmbeddedResource Remove="IO\**" />
+    <EmbeddedResource Remove="Ledger\**" />
+    <EmbeddedResource Remove="Network\P2P\**" />
+    <EmbeddedResource Remove="Persistence\**" />
+    <EmbeddedResource Remove="Plugins\**" />
+    <EmbeddedResource Remove="SmartContract\**" />
+    <EmbeddedResource Remove="VM\**" />
+    <EmbeddedResource Remove="Wallets\**" />
+    <None Remove="Consensus\**" />
+    <None Remove="Cryptography\**" />
+    <None Remove="DumpInfo\**" />
+    <None Remove="IO\**" />
+    <None Remove="Ledger\**" />
+    <None Remove="Network\P2P\**" />
+    <None Remove="Persistence\**" />
+    <None Remove="Plugins\**" />
+    <None Remove="SmartContract\**" />
+    <None Remove="VM\**" />
+    <None Remove="Wallets\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="BigDecimal.cs" />
+    <Compile Remove="MongoHelper.cs" />
+    <Compile Remove="NeoSystem.cs" />
+    <Compile Remove="Settings.cs" />
+    <Compile Remove="TimeProvider.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="protocol.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Akka" Version="1.3.8" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.ResponseCompression" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.WebSockets" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.1.1" />
+    <PackageReference Include="MongoDB.Driver" Version="2.7.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\lightdb.lib\lightdb.lib.csproj" />
+    <ProjectReference Include="..\llvm\llvm.csproj" />
+    <ProjectReference Include="..\neo-vm\neo-vm.csproj" />
+    <ProjectReference Include="..\neo\neo.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "neo-cli-rpcServer", "neo-cli-rpcServer\neo-cli-rpcServer.csproj", "{F42DDADE-FA98-4C6B-B863-369F8C9D6638}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lightdb.lib", "lightdb.lib\lightdb.lib.csproj", "{BADE3512-F962-4364-AA59-5C6DE647F1ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{73C23B34-0536-4110-A22F-045C060C1672}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "neo-vm", "neo-vm\neo-vm.csproj", "{A5D36C1D-5C00-4979-94CE-5076243EEDCB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "llvm", "llvm\llvm.csproj", "{A7AF3D13-3E4D-4026-94FF-15B5B71A21AC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "neo", "neo\neo.csproj", "{C67BA6A6-9F51-4BC5-81B0-63E5A2E68CD8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F42DDADE-FA98-4C6B-B863-369F8C9D6638}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F42DDADE-FA98-4C6B-B863-369F8C9D6638}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F42DDADE-FA98-4C6B-B863-369F8C9D6638}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F42DDADE-FA98-4C6B-B863-369F8C9D6638}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BADE3512-F962-4364-AA59-5C6DE647F1ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BADE3512-F962-4364-AA59-5C6DE647F1ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BADE3512-F962-4364-AA59-5C6DE647F1ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BADE3512-F962-4364-AA59-5C6DE647F1ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5D36C1D-5C00-4979-94CE-5076243EEDCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5D36C1D-5C00-4979-94CE-5076243EEDCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5D36C1D-5C00-4979-94CE-5076243EEDCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5D36C1D-5C00-4979-94CE-5076243EEDCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7AF3D13-3E4D-4026-94FF-15B5B71A21AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7AF3D13-3E4D-4026-94FF-15B5B71A21AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7AF3D13-3E4D-4026-94FF-15B5B71A21AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7AF3D13-3E4D-4026-94FF-15B5B71A21AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C67BA6A6-9F51-4BC5-81B0-63E5A2E68CD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C67BA6A6-9F51-4BC5-81B0-63E5A2E68CD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C67BA6A6-9F51-4BC5-81B0-63E5A2E68CD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C67BA6A6-9F51-4BC5-81B0-63E5A2E68CD8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BADE3512-F962-4364-AA59-5C6DE647F1ED} = {73C23B34-0536-4110-A22F-045C060C1672}
+		{A5D36C1D-5C00-4979-94CE-5076243EEDCB} = {73C23B34-0536-4110-A22F-045C060C1672}
+		{A7AF3D13-3E4D-4026-94FF-15B5B71A21AC} = {73C23B34-0536-4110-A22F-045C060C1672}
+		{C67BA6A6-9F51-4BC5-81B0-63E5A2E68CD8} = {73C23B34-0536-4110-A22F-045C060C1672}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DFA2356E-98DA-4EA0-909E-D3DF9FB9559E}
+	EndGlobalSection
+EndGlobal
